@@ -1,0 +1,166 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #e4dfdf;
+}
+
+.contact {
+    height: 800px;
+    background-color: #e4dfdf;
+    width: 100%;
+}
+
+.con_form {
+    width: 300px;
+    height: 45px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.nested_contact {
+    height: 500px;
+    width: 100%;
+    /* background-color: darkred; */
+    display: flex;
+}
+
+.contact_left {
+    height: 500px;
+    width: 70%;
+    /* background-color: deeppink; */
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.contact_right {
+    height: 500px;
+    width: 30%;
+    /* background-color: #6e14ff; */
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+#subject {
+    width: 1020px;
+    margin-left: 50px;
+    margin-top: 8px;
+    border-radius: 8px;
+    height: 280px;
+}
+
+.row {
+    float: right;
+    margin-right: 43px;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    color: black;
+    width: 140px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+h1 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+.contact_row {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #e4dfdf;
+}
+
+h1 {
+    color: #fff;
+}
+
+.nested_contact_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_col {
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    /* padding: 20px 12px; */
+    box-sizing: border-box;
+    transition: 0.5s;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600px;
+}
+
+.contact_col h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contact_col .fas {
+    padding-top: 20px;
+}
+
+.contact_col .far {
+    padding-top: 20px;
+}
+
+@media(max-width:700px) {
+    .nested_contact {
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact_right {
+        width: 80%;
+        margin-left: 50px;
+        margin-right: 100px;
+        margin-bottom: 220px;
+        margin-top: 20px;
+    }
+    .row {
+        flex-direction: column;
+        margin-right: 100px;
+    }
+    #subject {
+        width: 500px;
+    }
+    .nested_contact_row {
+        flex-direction: column;
+        margin-bottom: 125px;
+        margin-top: 450px;
+    }
+    .contact_left {
+        height: 500px;
+        width: 100%;
+        /* background-color: deeppink; */
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-left: -50px;
+        margin-bottom: 50px;
+    }
+    .con_form {
+        width: 500px;
+        height: 45px;
+        margin-left: 50px;
+        border-radius: 8px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+}
